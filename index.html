@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klay free is online</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      text-align: center;
+      padding: 60px 45px;
+      background: linear-gradient(145deg, #101010, #050505);
+      border: 1px solid #202020;
+      border-radius: 24px;
+      box-shadow: 0 0 60px rgba(0, 255, 100, 0.08);
+      animation: appear 1s ease-out;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 16px;
+      border: 1px solid #174d2c;
+      border-radius: 30px;
+      color: #42ff86;
+      background: #07140b;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #35ff79;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #35ff79;
+      animation: pulse 1.5s infinite;
+    }
+
+    h1 {
+      font-size: clamp(32px, 7vw, 58px);
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: #fff;
+      line-height: 1.15;
+    }
+
+    h1 span {
+      display: block;
+      margin-top: 8px;
+      color: #35ff79;
+      text-shadow: 0 0 25px #35ff7940;
+    }
+
+    .line {
+      width: 55px;
+      height: 3px;
+      background: #35ff79;
+      border-radius: 5px;
+      margin: 28px auto 20px;
+      box-shadow: 0 0 15px #35ff79;
+    }
+
+    p {
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: 0.35;
+        transform: scale(0.8);
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 45px 24px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="status">
+      <span class="dot"></span>
+      SYSTEM ONLINE
+    </div>
+
+    <h1>
+      Klay free
+      <span>is online.</span>
+    </h1>
+
+    <div class="line"></div>
+
+    <p>AVAILABLE NOW</p>
+  </main>
+</body>
+</html>
